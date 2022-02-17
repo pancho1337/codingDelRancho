@@ -1,6 +1,12 @@
-import logo from './logo.svg';
-import './App.css';
-
+import '../style/App.css';
+import { BrowserRouter } from "react-router-dom";
+import { moduleData } from "assets/dummyData/modules";
+import { toyProblemData } from "assets/dummyData/toyProblems";
+/**
+ * @description
+ * @params
+ * @return
+ */
 function App() {
   return (
     <div className="App">
@@ -16,19 +22,23 @@ function App() {
         </section>
         <section className="topics">
           <article className="topics__modules">
+            <h2>Modules</h2>
             <ol>
-              <li className="module">Module 0 - Intro to JavaScript</li>
-              <li>Module 1 - Front End Development</li>
-              <li>Module 2 - Back End Development</li>
-              <li>Module 3 - Full Stack</li>
+              {moduleData.map((item) =>
+                <li key={item.id} className="topics__modules__item">
+                  {item.moduleName}
+                </li>
+              )}
             </ol>
           </article>
-          <article>
+          <article className="toyProblems__rankings">
+                <h2>Toy Problems</h2>
             <ol>
-              <li>Module 0 - Intro to JavaScript</li>
-              <li>Module 1 - Front End Development</li>
-              <li>Module 2 - Back End Development</li>
-              <li>Module 3 - Full Stack</li>
+              {toyProblemData.map((item) =>
+                <li key={item.id} className="toyProblems__rankings__item">
+                  {item.rankingName}
+                </li>
+              )}
             </ol>
           </article>
         </section>
