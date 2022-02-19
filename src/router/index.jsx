@@ -13,10 +13,11 @@ const Router = function () {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<PageHome />} />
-        <Route path="/quiz" element={<Quiz />} />
-        <Route path="/lecture" element={<Lecture />} />
-        <Route path="/module" element={<Module />} />
+        <Route index path="/" element={<PageHome />} >
+          <Route path="quiz" element={<Quiz />} />
+          <Route path="/lecture" element={<Lecture />} />
+          <Route path="/module" element={<Module />} />
+        </Route>
       </Routes>
     </BrowserRouter>
   )
