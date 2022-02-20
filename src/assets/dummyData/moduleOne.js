@@ -6,6 +6,7 @@ export const moduleOneData = [
             {
                 name: "Day One",
                 id: 1,
+                description: "The objectives of this day are...",
                 lecture: [
                     {
                         id: 1,
@@ -27,198 +28,202 @@ export const moduleOneData = [
                         url: "https://github.com/pancho1337/HC03-toy-problems/blob/master/letterTally/letterTally.js"
                     }
                 ],
-                quiz: [
-                    {
-                        id: 1,
-                        question: "what is a variable?",
-                        answers: [
-                            {
-                                id: 1,
-                                value: "a space in memory"
-                            }, {
-                                id: 2,
-                                value: "a pointer to a space in memory"
-                            }, {
-                                id: 3,
-                                value: "a box to put things in "
-                            }, {
-                                id: 4,
-                                value: "a way to hold data"
-                            }
-                        ]
-                    },
-                    {
-                        id: 2,
-                        question: "what is a variable?",
-                        answers: [
-                            {
-                                id: 1,
-                                value: "a space in memory"
-                            }, {
-                                id: 2,
-                                value: "a pointer to a space in memory"
-                            }, {
-                                id: 3,
-                                value: "a box to put things in "
-                            }, {
-                                id: 4,
-                                value: "a way to hold data"
-                            }
-                        ]
-                    },
-                    {
-                        id: 3,
-                        question: "what is a variable?",
-                        answers: [
-                            {
-                                id: 1,
-                                value: "a space in memory"
-                            }, {
-                                id: 2,
-                                value: "a pointer to a space in memory"
-                            }, {
-                                id: 3,
-                                value: "a box to put things in "
-                            }, {
-                                id: 4,
-                                value: "a way to hold data"
-                            }
-                        ]
-                    },
-                    {
-                        id: 4,
-                        question: "what is a variable?",
-                        answers: [
-                            {
-                                id: 1,
-                                value: "a space in memory"
-                            }, {
-                                id: 2,
-                                value: "a pointer to a space in memory"
-                            }, {
-                                id: 3,
-                                value: "a box to put things in "
-                            }, {
-                                id: 4,
-                                value: "a way to hold data"
-                            }
-                        ]
-                    },
-                    {
-                        id: 5,
-                        question: "what is a variable?",
-                        answers: [
-                            {
-                                id: 1,
-                                value: "a space in memory"
-                            }, {
-                                id: 2,
-                                value: "a pointer to a space in memory"
-                            }, {
-                                id: 3,
-                                value: "a box to put things in "
-                            }, {
-                                id: 4,
-                                value: "a way to hold data"
-                            }
-                        ]
-                    },
-                    {
-                        id: 6,
-                        question: "what is a variable?",
-                        answers: [
-                            {
-                                id: 1,
-                                value: "a space in memory"
-                            }, {
-                                id: 2,
-                                value: "a pointer to a space in memory"
-                            }, {
-                                id: 3,
-                                value: "a box to put things in "
-                            }, {
-                                id: 4,
-                                value: "a way to hold data"
-                            }
-                        ]
-                    },
-                    {
-                        id: 7,
-                        question: "what is a variable?",
-                        answers: [
-                            {
-                                id: 1,
-                                value: "a space in memory"
-                            }, {
-                                id: 2,
-                                value: "a pointer to a space in memory"
-                            }, {
-                                id: 3,
-                                value: "a box to put things in "
-                            }, {
-                                id: 4,
-                                value: "a way to hold data"
-                            }
-                        ]
-                    },
-                    {
-                        id: 8,
-                        question: "what is a variable?",
-                        answers: [
-                            {
-                                id: 1,
-                                value: "a space in memory"
-                            }, {
-                                id: 2,
-                                value: "a pointer to a space in memory"
-                            }, {
-                                id: 3,
-                                value: "a box to put things in "
-                            }, {
-                                id: 4,
-                                value: "a way to hold data"
-                            }
-                        ]
-                    },
-                    {
-                        id: 9,
-                        question: "what is a variable?",
-                        answers: [
-                            {
-                                id: 1,
-                                value: "a space in memory"
-                            }, {
-                                id: 2,
-                                value: "a pointer to a space in memory"
-                            }, {
-                                id: 3,
-                                value: "a box to put things in "
-                            }, {
-                                id: 4,
-                                value: "a way to hold data"
-                            }
-                        ]
-                    },
-                    {
-                        id: 10,
-                        question: "what is a variable?",
-                        answers: [
-                            {
-                                id: 1,
-                                value: "a space in memory"
-                            }, {
-                                id: 2,
-                                value: "a pointer to a space in memory"
-                            }, {
-                                id: 3,
-                                value: "a box to put things in "
-                            }, {
-                                id: 4,
-                                value: "a way to hold data"
-                            }
-                        ]
-                    },
-                ]
+                quiz: {
+                    id: 1,
+                    title: "Function Review",
+                    questions: [
+                        {
+                            id: 1,
+                            question: "what is a variable?",
+                            answers: [
+                                {
+                                    id: 1,
+                                    value: "a space in memory"
+                                }, {
+                                    id: 2,
+                                    value: "a pointer to a space in memory"
+                                }, {
+                                    id: 3,
+                                    value: "a box to put things in "
+                                }, {
+                                    id: 4,
+                                    value: "a way to hold data"
+                                }
+                            ]
+                        },
+                        {
+                            id: 2,
+                            question: "what is a variable?",
+                            answers: [
+                                {
+                                    id: 1,
+                                    value: "a space in memory"
+                                }, {
+                                    id: 2,
+                                    value: "a pointer to a space in memory"
+                                }, {
+                                    id: 3,
+                                    value: "a box to put things in "
+                                }, {
+                                    id: 4,
+                                    value: "a way to hold data"
+                                }
+                            ]
+                        },
+                        {
+                            id: 3,
+                            question: "what is a variable?",
+                            answers: [
+                                {
+                                    id: 1,
+                                    value: "a space in memory"
+                                }, {
+                                    id: 2,
+                                    value: "a pointer to a space in memory"
+                                }, {
+                                    id: 3,
+                                    value: "a box to put things in "
+                                }, {
+                                    id: 4,
+                                    value: "a way to hold data"
+                                }
+                            ]
+                        },
+                        {
+                            id: 4,
+                            question: "what is a variable?",
+                            answers: [
+                                {
+                                    id: 1,
+                                    value: "a space in memory"
+                                }, {
+                                    id: 2,
+                                    value: "a pointer to a space in memory"
+                                }, {
+                                    id: 3,
+                                    value: "a box to put things in "
+                                }, {
+                                    id: 4,
+                                    value: "a way to hold data"
+                                }
+                            ]
+                        },
+                        {
+                            id: 5,
+                            question: "what is a variable?",
+                            answers: [
+                                {
+                                    id: 1,
+                                    value: "a space in memory"
+                                }, {
+                                    id: 2,
+                                    value: "a pointer to a space in memory"
+                                }, {
+                                    id: 3,
+                                    value: "a box to put things in "
+                                }, {
+                                    id: 4,
+                                    value: "a way to hold data"
+                                }
+                            ]
+                        },
+                        {
+                            id: 6,
+                            question: "what is a variable?",
+                            answers: [
+                                {
+                                    id: 1,
+                                    value: "a space in memory"
+                                }, {
+                                    id: 2,
+                                    value: "a pointer to a space in memory"
+                                }, {
+                                    id: 3,
+                                    value: "a box to put things in "
+                                }, {
+                                    id: 4,
+                                    value: "a way to hold data"
+                                }
+                            ]
+                        },
+                        {
+                            id: 7,
+                            question: "what is a variable?",
+                            answers: [
+                                {
+                                    id: 1,
+                                    value: "a space in memory"
+                                }, {
+                                    id: 2,
+                                    value: "a pointer to a space in memory"
+                                }, {
+                                    id: 3,
+                                    value: "a box to put things in "
+                                }, {
+                                    id: 4,
+                                    value: "a way to hold data"
+                                }
+                            ]
+                        },
+                        {
+                            id: 8,
+                            question: "what is a variable?",
+                            answers: [
+                                {
+                                    id: 1,
+                                    value: "a space in memory"
+                                }, {
+                                    id: 2,
+                                    value: "a pointer to a space in memory"
+                                }, {
+                                    id: 3,
+                                    value: "a box to put things in "
+                                }, {
+                                    id: 4,
+                                    value: "a way to hold data"
+                                }
+                            ]
+                        },
+                        {
+                            id: 9,
+                            question: "what is a variable?",
+                            answers: [
+                                {
+                                    id: 1,
+                                    value: "a space in memory"
+                                }, {
+                                    id: 2,
+                                    value: "a pointer to a space in memory"
+                                }, {
+                                    id: 3,
+                                    value: "a box to put things in "
+                                }, {
+                                    id: 4,
+                                    value: "a way to hold data"
+                                }
+                            ]
+                        },
+                        {
+                            id: 10,
+                            question: "what is a variable?",
+                            answers: [
+                                {
+                                    id: 1,
+                                    value: "a space in memory"
+                                }, {
+                                    id: 2,
+                                    value: "a pointer to a space in memory"
+                                }, {
+                                    id: 3,
+                                    value: "a box to put things in "
+                                }, {
+                                    id: 4,
+                                    value: "a way to hold data"
+                                }
+                            ]
+                        }
+                    ]
+                }
             }
         ]
 

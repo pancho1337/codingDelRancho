@@ -20,7 +20,7 @@ const Router = function () {
       <Routes>
         <Route path="*" element={<ErrorPage />} />
         <Route path="/" element={<PageHome />} />
-        <Route path="/module/quiz" element={<Quiz />} />
+        <Route path="/module/quiz/:quizId" element={<Quiz />} />
         <Route path="/module/lecture" element={<Lecture />} />
         <Route path="/module/toy-problem" element={<ToyProblem />} />
         <Route path="/module/project" element={<Project />} />
