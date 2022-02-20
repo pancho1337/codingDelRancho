@@ -2,6 +2,7 @@ import '../style/App.css';
 import { BrowserRouter } from "react-router-dom";
 import { moduleData } from "assets/dummyData/modules";
 import { toyProblemData } from "assets/dummyData/toyProblems";
+import { Link } from 'react-router-dom';
 /**
  * @description
  * @params
@@ -10,11 +11,6 @@ import { toyProblemData } from "assets/dummyData/toyProblems";
 function App() {
   return (
     <div className="App">
-      <header className="header">
-        <div className="header__item">
-          login
-        </div>
-      </header>
       <main>
         <section className="main">
           <h1 className="main__title">Web Dev 508: Cosechas lo que siembras.</h1>
@@ -25,8 +21,13 @@ function App() {
             <h2>Modules</h2>
             <ol>
               {moduleData.map((item) =>
-                <li key={item.id} className="topics__modules__item">
-                  {item.moduleName}
+                <li 
+                key={item.id} 
+                className="topics__modules__item"
+                >
+                  <Link to={`/module/${item.id}`}>
+                    {item.moduleName}
+                  </Link>
                 </li>
               )}
             </ol>
@@ -43,11 +44,7 @@ function App() {
           </article>
         </section>
       </main>
-      <footer>
-        <div>
-          <a>contact us</a>
-        </div>
-      </footer>
+
     </div>
   );
 }

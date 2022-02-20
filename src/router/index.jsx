@@ -2,23 +2,31 @@
  * @description
  */
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import PageHome from "pages/Home";
 import Quiz from "pages/Quiz";
 import Lecture from "pages/Lecture";
+import ToyProblem from "pages/ToyProblem";
+import Project from "pages/Project";
 import Module from "pages/Module";
-import test from "pages/Home"
-console.log("test",test)
+import Header from 'sharedComponents/Header';
+import Footer from 'sharedComponents/Footer';
+import ErrorPage from 'sharedComponents/ErrorPage';
+
 const Router = function () {
   return (
     <BrowserRouter>
+      <Header />
       <Routes>
-        <Route index path="/" element={<PageHome />} >
-          <Route path="quiz" element={<Quiz />} />
-          <Route path="/lecture" element={<Lecture />} />
-          <Route path="/module" element={<Module />} />
-        </Route>
+        <Route path="*" element={<ErrorPage />} />
+        <Route path="/" element={<PageHome />} />
+        <Route path="/module/quiz" element={<Quiz />} />
+        <Route path="/module/lecture" element={<Lecture />} />
+        <Route path="/module/toy-problem" element={<ToyProblem />} />
+        <Route path="/module/project" element={<Project />} />
+        <Route path="/module/:moduleId" element={<Module />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 };
