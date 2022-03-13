@@ -1,8 +1,8 @@
-import '../style/App.css';
 import { BrowserRouter } from "react-router-dom";
 import { moduleData } from "assets/dummyData/modules";
 import { toyProblemData } from "assets/dummyData/toyProblems";
 import { Link } from 'react-router-dom';
+
 /**
  * @description
  * @params
@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 function App() {
   return (
     <div className="App">
-      <main>
+      <main className='app'>
         <section className="main">
           <h1 className="main__title">Web Dev 508: Cosechas lo que siembras.</h1>
           <h2 className="main__subtitle">Recuerda el dicho</h2>
@@ -44,7 +44,6 @@ function App() {
           </article>
         </section>
       </main>
-
     </div>
   );
 }

@@ -1,20 +1,53 @@
 import { Link } from 'react-router-dom';
+import * as React from 'react';
+import CssBaseline from '@mui/material/CssBaseline';
+import Box from '@mui/material/Box';
+import Stack from '@mui/material/Stack';
+import Button from '@mui/material/Button';
+import { Container } from '@mui/material';
 
 function Header() {
     return (
-        <header className="header">
-            <nav>
-                <Link to="/">Home</Link> <br />
-                <Link to="/module">Module</Link> <br />
-                <Link to="/module/quiz">Quiz</Link> <br />
-                <Link to="/module/toy-problem">Toy Problem</Link> <br />
-                <Link to="/module/lecture">Lecture</Link> <br />
-                <Link to="/module/project">Project</Link> <br />
-            </nav>
-            <div className="header__item">
-                login
-            </div>
-        </header>
+        <Container maxWidth="xl">
+            <Box sx={{ bgcolor: '#0a0a23', height: "120px" }} >
+                <header className="header">
+                    <nav>
+                        <Stack spacing={2} direction="row" sx={{ 
+                            padding: "30px",   
+                            justifyContent: "space-between", 
+                            display: "flex"
+                        }}>
+                            <div style={{ 
+                                display: "flex", 
+                                justifyContent: "space-between", 
+                                maxWidth: "500px"}}>
+                                <Button variant="outlined" >
+                                    <Link style={{color: "white"}} to="/">Home</Link>
+                                </Button>
+                                <Button variant="outlined" >
+                                    <Link style={{color: "white"}} to="/module/quiz">Quiz</Link>
+                                </Button>
+                                <Button variant="outlined" >
+                                    <Link style={{color: "white"}} to="/module/toy-problem">Toy Problem</Link>
+                                </Button>
+                                <Button variant="outlined" >
+                                    <Link style={{color: "white"}} to="/module/lecture">Lecture</Link>
+                                </Button>
+                                <Button variant="outlined" >
+                                    <Link style={{color: "white"}} to="/module/project">Project</Link>
+                                </Button>
+                            </div>
+                            <div>
+                                <Button variant="outlined"  className="header__item" style={{color: "white"}}>
+                                    login
+                                </Button>
+                            </div>
+                        </Stack>
+                    </nav>
+                </header>
+            </Box>
+        </Container>
+
     )
 };
 

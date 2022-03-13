@@ -1,4 +1,3 @@
-import '../style/App.css';
 
 function Project() {
   return (
